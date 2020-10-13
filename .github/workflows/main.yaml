@@ -1,19 +1,19 @@
 name: Main
 
 on:
-  push:
-    # Publish `master` as Docker `latest` image.
-    branches:
-      - master
-      - dev
-      - release-*
+  # push:
+  #   # Publish `master` as Docker `latest` image.
+  #   branches:
+  #     - master
+  #     - dev
+  #     - release-*
 
-    # Publish `v1.2.3` tags as releases.
-    tags:
-      - v*
+  #   # Publish `v1.2.3` tags as releases.
+  #   tags:
+  #     - v*
 
-  # Run build for any PRs.
-  pull_request:
+  # # Run build for any PRs.
+  # pull_request:
 
 env:
   IMAGE_NAME: ks-console
